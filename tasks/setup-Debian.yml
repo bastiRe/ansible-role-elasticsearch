@@ -11,4 +11,6 @@
     update_cache: yes
 
 - name: Install Elasticsearch.
-  apt: pkg=elasticsearch state=present
+  apt:
+    name: elasticsearch=2.3.4
+    state: present
